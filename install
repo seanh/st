@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+set -e
+
+cd ~/.st
+
+# fonts-symbola is needed to stop st from crashing on emojis.
+# The crashes might still happen until the font cache has been updated.
+sudo apt install --yes build-essential fonts-symbola libxft-dev
+
+git clone https://git.suckless.org/st st
+cd st
+git checkout 0.8.4
+make
+
+for i in ../patches/*.diff; do patch -i $i; done
+
+sudo make install
+
+mkdir -p ~/.local/share/applications/
+ln -f -s ~/.st/st.desktop ~/.local/share/applications/

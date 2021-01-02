@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -e
+
+cd ~/.st
+
+cd st
+sudo make uninstall
+
+rm ~/.local/share/applications/st.desktop
+
+cd ..
+rm -rf st

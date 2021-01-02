@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Simple Terminal
+GenericName=Simple Terminal
+Comment=A simple terminal implementation for X.
+Exec=st -c st
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=org.gnome.Terminal
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;cmd;

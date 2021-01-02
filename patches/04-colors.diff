@@ -1,0 +1,67 @@
+Change the color palette. Uses the default GNOME Terminal color palette from GNOME 3.38.
+--- config.h
++++ config.h
+@@ -96,30 +96,31 @@ unsigned int tabspaces = 8;
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+ 	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
++	"#171421",
++	"#C01C28",
++	"#26A269",
++	"#A2734C",
++	"#12488B",
++	"#A347BA",
++	"#2AA1B3",
++	"#D0CFCC",
+ 
+ 	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
++	"#5E5C64",
++	"#F66151",
++	"#33DA7A",
++	"#E9AD0C",
++	"#2A7BDE",
++	"#C061CB",
++	"#33C7DE",
++	"#FFFFFF",
+ 
+ 	[255] = 0,
+ 
+-	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++	/* more colors can be added after 255 to use with the default* variables below */
++	"#e3e3e3",
++	"#1e1e1e",
++	"#ffffff",
+ };
+ 
+ 
+@@ -127,9 +128,9 @@ static const char *colorname[] = {
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
+  */
+-unsigned int defaultfg = 7;
+-unsigned int defaultbg = 0;
+-static unsigned int defaultcs = 256;
++unsigned int defaultfg = 256;
++unsigned int defaultbg = 257;
++static unsigned int defaultcs = 258;
+ static unsigned int defaultrcs = 257;
+ 
+ /*
