@@ -46,9 +46,9 @@ Change the color palette. Uses the default GNOME Terminal color palette from GNO
 -	"#cccccc",
 -	"#555555",
 +	/* more colors can be added after 255 to use with the default* variables below */
-+	"#e3e3e3",
-+	"#1e1e1e",
-+	"#ffffff",
++	"#171421",
++	"#FFFFFF",
++	"#000000",
  };
  
  
