@@ -1,7 +1,21 @@
 #!/usr/bin/env sh
 set -e
 
+DARK_MODE=false
+
+for arg in "$@"
+do
+    case $arg in
+        --dark)
+        DARK_MODE=true
+        shift
+        ;;
+    esac
+done
+
 cd ~/.st
+
+rm -rf st
 
 # fonts-symbola is needed to stop st from crashing on emojis.
 # The crashes might still happen until the font cache has been updated.
@@ -13,6 +27,11 @@ git checkout 0.8.4
 make
 
 for i in ../patches/*.diff; do patch -i $i; done
+
+if [ "$DARK_MODE" = true ]
+then
+  patch -i ../dark_mode.diff
+fi
 
 sudo make install
 

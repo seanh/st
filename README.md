@@ -9,7 +9,7 @@ Customizations
   with fallbacks in case you don't have it installed.  
   (Source Code Pro is the [default monospaced font in GNOME](https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/issues/2) as of early 2019.)
 * Use tmux as the default shell
-* GNOME Terminal's color palette ported from GNOME 3.38
+* GNOME Terminal's color palette ported from GNOME 3.38 (both light and dark themes)
 * Custom keyboard shortcuts (see below)
 * GNOME desktop integration (`.desktop` file)
 
@@ -24,10 +24,16 @@ FIXME: Only use tmux if it's installed.
 
 Then:
 
-```bash
+```terminal
 sudo apt install --yes git
 git clone 'https://github.com/seanh/st.git' ~/.st
 ~/.st/install
+```
+
+To use the dark theme instead of light:
+
+```terminal
+~/.st/install --dark
 ```
 
 Then run `st`, and see `man st`.
