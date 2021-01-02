@@ -1,6 +1,8 @@
 My [st](http://st.suckless.org/) config
 =======================================
 
+![Screenshots](screenshots.png)
+
 Customizations
 --------------
 
