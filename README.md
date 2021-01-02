@@ -24,9 +24,7 @@ Installation
   software (universe)" option in the **Software & Updates** app.
 
 * Install [tmux](https://github.com/seanh/tmux/), my `config.h` configures st
-  to use tmux.
-
-  FIXME: Only use tmux if it's installed.
+  to use tmux. (FIXME: Only use tmux if it's installed.)
 
 Then:
 
