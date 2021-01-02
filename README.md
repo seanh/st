@@ -1,7 +1,5 @@
-seanh's st
-==========
-
-My [st](http://st.suckless.org/) config.
+My [st](http://st.suckless.org/) config
+=======================================
 
 Customizations
 --------------
