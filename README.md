@@ -6,7 +6,7 @@ Customizations
 
 * Don't show bold text in bright colors (because GNOME Terminal doesn't by default)
 * Use [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) as the default font,
-  with fallbacks in case you don't have it installed.
+  with fallbacks in case you don't have it installed.  
   (Source Code Pro is the [default monospaced font in GNOME](https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/issues/2) as of early 2019.)
 * Use tmux as the default shell
 * GNOME Terminal's color palette ported from GNOME 3.38
