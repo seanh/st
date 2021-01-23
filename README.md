@@ -57,4 +57,4 @@ Not changed from st's defaults:
 
 <kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd></kbd> Paste from the clipboard.
 
-<kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></kbd> or middle mouse button: paste from primary selection.
+<kbd><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></kbd> or <kbd>Middle Mouse Button</kbd> paste from primary selection.
